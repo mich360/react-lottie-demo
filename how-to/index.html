@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.youtube.com/watch?v=LIoRZZ_va_o&t=23s" >参考動画　5 分以内に Lottie に反応する - チュートリアル</a>
+
+ <p>Lottie アニメーションを React プロジェクトに含める方法です。</p>   
+
+<p><a href="https://youtu.be/LIoRZZ_va_o?t=23　npx" > https://youtu.be/LIoRZZ_va_o?t=23　npx 実行する</a>　　Nodeとyarn インソール
+と</p>
+<p><a href=" https://airbnb.io/lottie/#/web ">https://airbnb.io/lottie/#/web </a>lottie-web</p>
+<p><a href=" https://airbnb.io/lottie/#/web?id=npm">https://airbnb.io/lottie/#/web?id=npm</a>lottie-nom</p>
+<p>react-lottie-demo  (デスクトップ)をVSコードで開き　yarn start 　とコマンド</p>
+
+
+<pre>
+    yarn —verssion  で確認
+    Node.jsとはWebページ作成などの際に使われるJavaScriptを、サーバー側で動作させるプラットフォームです
+    
+    npxとは[エヌピーエックス]と読み、Node Package eXecutor の略語であり、Node.jsパッケージの実行を一時的に行うためのコマンドラインツールです。 簡単に言えば、使いたいパッケージをインストール + 実行 + アンインストールをまとめて行います。2023/04/10
+    
+    Streamlitは、データアプリケーションを構築するためのフレームワークであり、Lottieはアニメーションを含むファイルを表示するための形式です。LottieファイルをStreamlitで使用するためには、`pylottie`というパッケージを使用することができます。以下に、LottieファイルをStreamlitで表示するためのコード例を示します。
+    
+    まず、`pylottie`パッケージをインストールします。　　　　　npx create-react-app
+    
+    ```bash
+    
+    pip install pylottie
+    
+    ```
+    
+    次に、以下のコードを使用して、LottieファイルをStreamlitアプリに表示します。
+    
+    ```python
+    
+    import streamlit as st
+    from pylottie import load_animation
+    
+    def main():
+        st.title("Lottie Animation Example")
+        
+        # Lottieファイルのパスを指定します
+        lottie_path = "path_to_lottie_file.json"
+        
+        # Lottieファイルを読み込みます
+        animation = load_animation(lottie_path)
+        
+        # Lottieアニメーションを表示します
+        st_lottie(animation)
+    
+    if __name__ == "__main__":
+        main()
+    
+    
+    ```
+    コードの詳細な説明は以下の通りです:
+
+import streamlit as st:
+Streamlitライブラリをstとしてインポートします。Streamlitは、データの可視化やWebアプリケーションの作成などに使用されるPythonのライブラリです。
+
+from pylottie import load_animation:
+pylottieパッケージからload_animation関数をインポートします。この関数は、Lottieファイルを読み込むために使用されます。
+
+def main()::
+mainという名前の関数を定義します。この関数はアプリケーションのエントリーポイントとして使用されます。
+
+st.title("Lottie Animation Example"):
+Streamlitのtitle関数を使用して、アプリケーションのタイトルを設定します。
+
+lottie_path = "path_to_lottie_file.json":
+Lottieファイルのパスを指定します。実際のLottieファイルのパスに置き換える必要があります。
+
+animation = load_animation(lottie_path):
+load_animation関数を使用して、指定されたLottieファイルを読み込み、animationオブジェクトに格納します。
+
+st_lottie(animation):
+Streamlitのst_lottie関数を使用して、animationオブジェクトを表示します。これにより、LottieアニメーションがStreamlitアプリケーションに表示されます。
+
+if __name__ == "__main__": main():
+このスクリプトが直接実行される場合にのみ、main関数が呼び出されます。
+
+このコードは、Streamlitとpylottieパッケージを使用して、指定されたLottieファイルを読み込んで表示するシンプルなアプリケーションを作成しています。
+
+
+
+
+
+    
+    上記のコードでは、`st.title()`を使用してアプリのタイトルを設定し、`load_animation()`を使用してLottieファイルを読み込んでいます。最後に、`st_lottie()`を使用してLottieアニメーションを表示しています。
+    
+    上記のコードを実行すると、Streamlitアプリが起動し、Lottieアニメーションが表示されます。Lottieファイルのパスを正しく指定し、StreamlitアプリがLottieアニメーションを表示することができます。
+    
+    Lottieファイルを使用してアニメーションを表示するためのコード例を以下に示します。
+    import streamlit as st
+    import json
+    from streamlit_lottie import st_lottie
+    from urllib.request import urlopen
+    
+    def load_lottie_url(url):
+        response = urlopen(url)
+        data = response.read()
+        return json.loads(data.decode("utf-8"))
+    
+    def main():
+        st.title("Lottie Animation Example")
+        
+        # LottieファイルのURLを指定します     https://assets8.lottiefiles.com/packages/lf20_OT15QW.json
+        lottie_url = "https://assets5.lottiefiles.com/private_files/lf30_qvhqhlyg.json"
+        
+        # Lottieファイルを読み込みます
+        animation_data = load_lottie_url(lottie_url)
+        
+        # Lottieアニメーションを表示します
+        st_lottie(animation_data)
+    
+    if __name__ == "__main__":
+        main()
+    
+
+</pre>
+
+
+    
+</body>
+</html>

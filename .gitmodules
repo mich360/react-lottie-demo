@@ -1,0 +1,3 @@
+[submodule "cat-animetion"]
+	path = cat-animetion
+	url = https://github.com/mich360/cat-animetion.git

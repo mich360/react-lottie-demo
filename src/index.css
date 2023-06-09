@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: lightcyan;
+}
+.container {
+  /* transform: scale(0.5); 縮小率を指定します（例として0.5を指定） */
+}
+#p{width: 800px; margin-right: auto; margin-left: 50px; text-align: start;}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.app-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.App {
+  width: 30%; /* 適切なサイズに調整してください */
+  height: auto; /* 必要に応じて調整してください */
+}
+
+
