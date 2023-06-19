@@ -70,28 +70,28 @@
     コードの詳細な説明は以下の通りです:
 
 import streamlit as st:
-Streamlitライブラリをstとしてインポートします。Streamlitは、データの可視化やWebアプリケーションの作成などに使用されるPythonのライブラリです。
+    Streamlitライブラリをstとしてインポートします。Streamlitは、データの可視化やWebアプリケーションの作成などに使用されるPythonのライブラリです。
 
 from pylottie import load_animation:
-pylottieパッケージからload_animation関数をインポートします。この関数は、Lottieファイルを読み込むために使用されます。
+    pylottieパッケージからload_animation関数をインポートします。この関数は、Lottieファイルを読み込むために使用されます。
 
 def main()::
-mainという名前の関数を定義します。この関数はアプリケーションのエントリーポイントとして使用されます。
+    mainという名前の関数を定義します。この関数はアプリケーションのエントリーポイントとして使用されます。
 
 st.title("Lottie Animation Example"):
-Streamlitのtitle関数を使用して、アプリケーションのタイトルを設定します。
+    Streamlitのtitle関数を使用して、アプリケーションのタイトルを設定します。
 
 lottie_path = "path_to_lottie_file.json":
-Lottieファイルのパスを指定します。実際のLottieファイルのパスに置き換える必要があります。
+    Lottieファイルのパスを指定します。実際のLottieファイルのパスに置き換える必要があります。
 
 animation = load_animation(lottie_path):
-load_animation関数を使用して、指定されたLottieファイルを読み込み、animationオブジェクトに格納します。
+    load_animation関数を使用して、指定されたLottieファイルを読み込み、animationオブジェクトに格納します。
 
 st_lottie(animation):
-Streamlitのst_lottie関数を使用して、animationオブジェクトを表示します。これにより、LottieアニメーションがStreamlitアプリケーションに表示されます。
+    Streamlitのst_lottie関数を使用して、animationオブジェクトを表示します。これにより、LottieアニメーションがStreamlitアプリケーションに表示されます。
 
 if __name__ == "__main__": main():
-このスクリプトが直接実行される場合にのみ、main関数が呼び出されます。
+    このスクリプトが直接実行される場合にのみ、main関数が呼び出されます。
 
 このコードは、Streamlitとpylottieパッケージを使用して、指定されたLottieファイルを読み込んで表示するシンプルなアプリケーションを作成しています。
 
