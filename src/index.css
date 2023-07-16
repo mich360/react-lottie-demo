@@ -21,7 +21,7 @@ code {
   align-items: flex-start;
 }
 .App {
-  width: 30%; /* 適切なサイズに調整してください */
+  width: 60%; /* 適切なサイズに調整してください */
   height: auto; /* 必要に応じて調整してください */
 }
 
